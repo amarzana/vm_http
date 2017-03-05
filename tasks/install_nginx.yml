@@ -1,0 +1,11 @@
+- name: NGINX | Installing NGINX
+  sudo: yes
+  apt:
+    name: nginx
+    state: present
+
+- name: NGINX | Starting NGINX
+  sudo: yes
+  service:
+    name: nginx
+    state: started
